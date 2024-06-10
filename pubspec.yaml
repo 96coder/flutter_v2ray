@@ -1,0 +1,28 @@
+name: flutter_v2ray
+description: A plugin that allow you to making v2ray connection (VPN Mode & Proxy Only)
+
+version: 1.0.8
+homepage: https://github.com/blueboy-tm/flutter_v2ray/
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.github.blueboytm.flutter_v2ray
+        pluginClass: FlutterV2rayPlugin
+      ios:
+        pluginClass: FlutterV2rayPlugin
